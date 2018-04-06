@@ -6,7 +6,7 @@ int es_palindromo(char *cadena)
 
    //Halla la cadena invertida 
    for(int i=0; i < long; i++)
-       invertida[ i ]=cadena[strlen(cadena)-i-1];
+       invertida[ i ]=cadena[long-i-1];
 
    // Realiza la comparacion 
    for (int j=0; j< long;j++ ){
