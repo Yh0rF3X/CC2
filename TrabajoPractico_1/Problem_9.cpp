@@ -1,18 +1,18 @@
 int es_palindromo(char *cadena)
 {
-   int i;
+ 
    char *invertida;
+   int long=strlen(cadena);
 
-   /* Halla la cadena invertida */
-   for(i=0; i < strlen(cadena); i++)
+   //Halla la cadena invertida 
+   for(int i=0; i < long; i++)
        invertida[ i ]=cadena[strlen(cadena)-i-1];
 
-   /* Coloca caracter de fin de cadena */
-   invertida[ i ] = '\0';
-
-   /* Realiza la comparacion */
-   if(!strcmp(cadena, invertida))
-     return 1; /* es un palindromo */
-         
-   return 0;  /* no es un palindromo */
+   // Realiza la comparacion 
+   for (int j=0; j< long;j++ ){
+      if(cadena[j]==invertida[j]){
+        return 1;
+      return 0; 
+      }
+   }   
 }
